@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-ImageConverter"
+        version="1.0.0">
+
+  <name>ImageConverter</name>
+
+  <js-module src="www/ImageConverter.js" name="ImageConverter">
+    <clobbers target="window.plugins.imageconveter" />
+  </js-module>
+
+  <platform name="android">
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="ImageConverter">
+        <param name="android-package" value="jeno5980515.cordova.ImageConverter"/>
+      </feature>
+    </config-file>
+    <source-file src="src/android/libs/commons-codec-1.10.jar" target-dir="libs" />
+    <source-file src="src/android/ImageConverter.java" target-dir="src/jeno5980515/cordova/"/>
+  </platform>
+
+</plugin>
