@@ -10,7 +10,7 @@ $ cordova plugin add https://github.com/jeno5980515/cordova-plugin-ImageConverte
 ```
 
 # Example
-```
+```javascript
 document.addEventListener('deviceready', function () {
 	function getBase64Callback(base64){
 		alert(base64);
@@ -44,3 +44,6 @@ document.addEventListener('deviceready', function () {
 	}
 });
 ``` 
+# TODO
+*   iOS
+*   FILE_URI
