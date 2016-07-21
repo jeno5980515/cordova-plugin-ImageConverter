@@ -44,6 +44,6 @@ document.addEventListener('deviceready', function () {
 	}
 });
 ``` 
-# TODO
+# ToDo
 *   iOS
 *   FILE_URI
